@@ -19,5 +19,5 @@ let appData = {
 };
 
 appData.expenses[itemOfExpenditure] = Cost;
-console.log(appData['expenses']); 
- 
+console.log(appData['expenses']);
+alert("ваш бюджет на 1 день равняется " + money - itemOfExpenditure - Cost);
