@@ -23,4 +23,4 @@ let appData = {
 appData.expenses[q1] = q2;
 appData.expenses[q3] = q4;
 
-alert(appData.budget / 30);
+alert( "бюджет на день"+  appData.budget / 30);
