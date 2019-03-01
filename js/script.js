@@ -1,13 +1,10 @@
 let money = +prompt('"Ваш бюджет на месяц'),
     time = prompt('Введите дату в формате YYYY-MM-DD'),
-    itemOfExpenditure = +prompt('Введите обязательную статью расходов в этом месяце'),
-    Cost = +prompt('Во сколько обойдется?');
-
 
 let appData = {
     budget: money,
     timeData: time,
-    sarvings: false,
+    savings: false,
     expenses: {
 
     },
@@ -18,7 +15,12 @@ let appData = {
 
 };
 
-appData.expenses['response1'] = itemOfExpenditure;
-appData.expenses['response2'] = Cost;
-console.log(appData['expenses']);
-alert("ваш бюджет на 1 день равняется " + (money - itemOfExpenditure - Cost) / 30);
+let q1 = prompt("введите обязательно статью расходов в этом месяце ", ''),
+q2 = prompt("Во сколько обойдется?", ''),
+q3 = prompt("введите обязательно статью расходов в этом месяце ", ''),
+q4 = prompt("Во сколько обойдется?", '');
+
+appData.expenses[q1] = q2;
+appData.expenses[q3] = q4;
+
+alert(appData.budget/ 30);
