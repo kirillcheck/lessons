@@ -9,7 +9,7 @@ let appData = {
     timeData: time,
     sarvings: false,
     expenses: {
-        itemOfExpenditure: Cost
+
     },
     optionalExpenses: {
 
@@ -18,6 +18,7 @@ let appData = {
 
 };
 
-appData.expenses[itemOfExpenditure] = Cost;
+appData.expenses['response1'] = itemOfExpenditure;
+appData.expenses['response2'] = Cost;
 console.log(appData['expenses']);
-alert("ваш бюджет на 1 день равняется " + (money - itemOfExpenditure - Cost)/30);
+alert("ваш бюджет на 1 день равняется " + (money - itemOfExpenditure - Cost) / 30);
